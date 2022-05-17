@@ -415,7 +415,7 @@ typedef struct TU_ATTR_PACKED
 {
   uint8_t  bLength         ; ///< Size of this descriptor in bytes
   uint8_t  bDescriptorType ; ///< Descriptor Type
-  uint16_t unicode_string[];
+  uint16_t *unicode_string;
 } tusb_desc_string_t;
 
 // USB Binary Device Object Store (BOS)
@@ -426,7 +426,7 @@ typedef struct TU_ATTR_PACKED
   uint8_t bDevCapabilityType;
   uint8_t bReserved;
   uint8_t PlatformCapabilityUUID[16];
-  uint8_t CapabilityData[];
+  uint8_t *CapabilityData;
 } tusb_desc_bos_platform_t;
 
 // USB WebuSB URL Descriptor
@@ -435,7 +435,7 @@ typedef struct TU_ATTR_PACKED
   uint8_t bLength;
   uint8_t bDescriptorType;
   uint8_t bScheme;
-  char    url[];
+  char    *url;
 } tusb_desc_webusb_url_t;
 
 // DFU Functional Descriptor
