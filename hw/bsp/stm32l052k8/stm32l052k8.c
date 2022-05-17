@@ -199,7 +199,14 @@ void HardFault_Handler (void)
 
 // Required by __libc_init_array in startup code if we are compiling using
 // -nostdlib/-nostartfiles.
-void _init(void)
+void _init(void) __attribute__((weak));
+void  _init(void)
+{
+
+}
+
+void _fini(void) __attribute__((weak));
+void _fini(void)
 {
 
 }
