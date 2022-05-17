@@ -205,41 +205,39 @@ typedef struct TU_ATTR_PACKED
 }hid_gamepad_report_t;
 
 /// Standard Gamepad Buttons Bitmap
-typedef enum
-{
-  GAMEPAD_BUTTON_0  = TU_BIT(0),
-  GAMEPAD_BUTTON_1  = TU_BIT(1),
-  GAMEPAD_BUTTON_2  = TU_BIT(2),
-  GAMEPAD_BUTTON_3  = TU_BIT(3),
-  GAMEPAD_BUTTON_4  = TU_BIT(4),
-  GAMEPAD_BUTTON_5  = TU_BIT(5),
-  GAMEPAD_BUTTON_6  = TU_BIT(6),
-  GAMEPAD_BUTTON_7  = TU_BIT(7),
-  GAMEPAD_BUTTON_8  = TU_BIT(8),
-  GAMEPAD_BUTTON_9  = TU_BIT(9),
-  GAMEPAD_BUTTON_10 = TU_BIT(10),
-  GAMEPAD_BUTTON_11 = TU_BIT(11),
-  GAMEPAD_BUTTON_12 = TU_BIT(12),
-  GAMEPAD_BUTTON_13 = TU_BIT(13),
-  GAMEPAD_BUTTON_14 = TU_BIT(14),
-  GAMEPAD_BUTTON_15 = TU_BIT(15),
-  GAMEPAD_BUTTON_16 = TU_BIT(16),
-  GAMEPAD_BUTTON_17 = TU_BIT(17),
-  GAMEPAD_BUTTON_18 = TU_BIT(18),
-  GAMEPAD_BUTTON_19 = TU_BIT(19),
-  GAMEPAD_BUTTON_20 = TU_BIT(20),
-  GAMEPAD_BUTTON_21 = TU_BIT(21),
-  GAMEPAD_BUTTON_22 = TU_BIT(22),
-  GAMEPAD_BUTTON_23 = TU_BIT(23),
-  GAMEPAD_BUTTON_24 = TU_BIT(24),
-  GAMEPAD_BUTTON_25 = TU_BIT(25),
-  GAMEPAD_BUTTON_26 = TU_BIT(26),
-  GAMEPAD_BUTTON_27 = TU_BIT(27),
-  GAMEPAD_BUTTON_28 = TU_BIT(28),
-  GAMEPAD_BUTTON_29 = TU_BIT(29),
-  GAMEPAD_BUTTON_30 = TU_BIT(30),
-  GAMEPAD_BUTTON_31 = TU_BIT(31),
-}hid_gamepad_button_bm_t;
+typedef uint32_t hid_gamepad_button_bm_t;
+#define GAMEPAD_BUTTON_0  ((uint32_t)TU_BIT(0))
+#define GAMEPAD_BUTTON_1  ((uint32_t)U_BIT(1))
+#define GAMEPAD_BUTTON_2  ((uint32_t)U_BIT(2))
+#define GAMEPAD_BUTTON_3  ((uint32_t)U_BIT(3))
+#define GAMEPAD_BUTTON_4  ((uint32_t)U_BIT(4))
+#define GAMEPAD_BUTTON_5  ((uint32_t)U_BIT(5))
+#define GAMEPAD_BUTTON_6  ((uint32_t)U_BIT(6))
+#define GAMEPAD_BUTTON_7  ((uint32_t)U_BIT(7))
+#define GAMEPAD_BUTTON_8  ((uint32_t)U_BIT(8))
+#define GAMEPAD_BUTTON_9  ((uint32_t)U_BIT(9))
+#define GAMEPAD_BUTTON_10 ((uint32_t)U_BIT(10))
+#define GAMEPAD_BUTTON_11 ((uint32_t)U_BIT(11))
+#define GAMEPAD_BUTTON_12 ((uint32_t)U_BIT(12))
+#define GAMEPAD_BUTTON_13 ((uint32_t)U_BIT(13))
+#define GAMEPAD_BUTTON_14 ((uint32_t)U_BIT(14))
+#define GAMEPAD_BUTTON_15 ((uint32_t)U_BIT(15))
+#define GAMEPAD_BUTTON_16 ((uint32_t)U_BIT(16))
+#define GAMEPAD_BUTTON_17 ((uint32_t)U_BIT(17))
+#define GAMEPAD_BUTTON_18 ((uint32_t)U_BIT(18))
+#define GAMEPAD_BUTTON_19 ((uint32_t)U_BIT(19))
+#define GAMEPAD_BUTTON_20 ((uint32_t)U_BIT(20))
+#define GAMEPAD_BUTTON_21 ((uint32_t)U_BIT(21))
+#define GAMEPAD_BUTTON_22 ((uint32_t)U_BIT(22))
+#define GAMEPAD_BUTTON_23 ((uint32_t)U_BIT(23))
+#define GAMEPAD_BUTTON_24 ((uint32_t)U_BIT(24))
+#define GAMEPAD_BUTTON_25 ((uint32_t)U_BIT(25))
+#define GAMEPAD_BUTTON_26 ((uint32_t)U_BIT(26))
+#define GAMEPAD_BUTTON_27 ((uint32_t)U_BIT(27))
+#define GAMEPAD_BUTTON_28 ((uint32_t)U_BIT(28))
+#define GAMEPAD_BUTTON_29 ((uint32_t)U_BIT(29))
+#define GAMEPAD_BUTTON_30 ((uint32_t)U_BIT(30))
+#define GAMEPAD_BUTTON_31 ((uint32_t)U_BIT(31))
 
 /// Standard Gamepad Buttons Naming from Linux input event codes
 /// https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h
